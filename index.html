@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Dietitian offers personalized meal planning and nutrition insights with an easy-to-use app.">
+    <meta property="og:title" content="AI Dietitian">
+    <meta property="og:image" content="images/hero_dietitian.png">
     <title>AI Dietitian - True Personalization</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,13 +13,17 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">AI Dietitian</a>
+                <a href="#">
+                    <img src="images/logo.png" alt="AI Dietitian logo" class="logo-img">
+                </a>
             </div>
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
         </nav>
     </header>
 
@@ -27,6 +34,11 @@
             <a href="#" class="cta-button">Download Now</a>
         </div>
         <img src="images/hero_dietitian.png" alt="AI Dietitian App Hero Image" class="hero-image">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Email us at <a href="mailto:support@aidietitian.app">support@aidietitian.app</a>.</p>
     </section>
 
     <section id="features">
@@ -53,7 +65,7 @@
     <section id="app-showcase">
         <h2>See the App in Action</h2>
         <div class="video-container">
-            <video controls poster="images/app_video_placeholder.mp4">
+            <video controls poster="images/app_video_poster.png">
                 <source src="images/app_video_placeholder.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -98,6 +110,7 @@
     </section>
 
     <footer>
+        <p class="disclaimer">This site provides general nutrition information and is not a substitute for professional medical advice.</p>
         <p>&copy; 2025 AI Dietitian. All rights reserved.</p>
     </footer>
 

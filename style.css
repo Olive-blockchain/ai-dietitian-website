@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #333;
+    --primary-color: #2b8a3e;
+    --secondary-color: #1f1f1f;
     --text-color: #333;
     --background-color: #f4f4f4;
     --card-background: rgba(255, 255, 255, 0.8);
     --card-border: rgba(255, 255, 255, 0.3);
     --shadow-color: rgba(0, 0, 0, 0.1);
-    --gradient-start: #e0ffe0;
-    --gradient-end: #c0f0c0;
+    --gradient-start: #f5f9ff;
+    --gradient-end: #d5e4f0;
 }
 
 [data-theme='dark'] {
@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', 'Poppins', sans-serif;
     margin: 0;
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     color: var(--text-color);
@@ -49,11 +49,30 @@ nav {
     padding: 0 20px;
 }
 
+#theme-toggle {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
 .logo a {
     color: #fff;
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 nav ul {
@@ -90,6 +109,22 @@ nav ul li a:hover {
     min-height: 60vh;
 }
 
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0));
+    pointer-events: none;
+    z-index: 0;
+}
+
+[data-theme='dark'] #hero::before {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
 .hero-content {
     z-index: 1;
     max-width: 800px;
@@ -100,6 +135,7 @@ nav ul li a:hover {
     margin-bottom: 1rem;
     font-weight: 700;
     color: var(--text-color);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .hero-content p {
@@ -112,10 +148,10 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
-    opacity: 0.8;
-    z-index: 0;
+    opacity: 0.85;
+    z-index: 1;
 }
 
 .cta-button {
@@ -255,4 +291,10 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
 }

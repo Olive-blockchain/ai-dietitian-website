@@ -8,21 +8,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dark/Light Mode Toggle (Placeholder - integrate with your settings)
-// For demonstration, we'll use a simple button click to toggle
-// In a real app, this would be driven by user settings and persisted.
+// Theme toggle with persistence
 
 const toggleTheme = () => {
     const body = document.body;
+    const icon = document.getElementById('theme-icon');
     if (body.getAttribute('data-theme') === 'dark') {
         body.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        if (icon) icon.textContent = '🌙';
     } else {
         body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        if (icon) icon.textContent = '☀️';
     }
 };
 
-// Example: Add a button in your HTML to call toggleTheme()
-// <button onclick="toggleTheme()">Toggle Dark Mode</button>
+const applySavedTheme = () => {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const icon = document.getElementById('theme-icon');
+    if (saved === 'dark' || (!saved && prefersDark)) {
+        document.body.setAttribute('data-theme', 'dark');
+        if (icon) icon.textContent = '☀️';
+    } else if (icon) {
+        icon.textContent = '🌙';
+    }
+};
+
+// Keep theme consistent across tabs
+window.addEventListener('storage', (e) => {
+    if (e.key === 'theme') applySavedTheme();
+});
+
+// Attach toggle to button in header
+document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+// Apply theme on page load
+applySavedTheme();
 
 // FAQ Accordion
 document.querySelectorAll('.faq-item h3').forEach(item => {
