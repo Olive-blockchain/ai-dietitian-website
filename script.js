@@ -36,6 +36,16 @@ const applySavedTheme = () => {
     }
 };
 
+<<<<<<< ours
+=======
+// Update theme if system preference changes and no user choice is stored
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (!localStorage.getItem('theme')) {
+        applySavedTheme();
+    }
+});
+
+>>>>>>> theirs
 // Keep theme consistent across tabs
 window.addEventListener('storage', (e) => {
     if (e.key === 'theme') applySavedTheme();
