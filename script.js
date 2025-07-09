@@ -37,7 +37,10 @@ const applySavedTheme = () => {
 };
 
 <<<<<<< ours
+<<<<<<< ours
 =======
+=======
+>>>>>>> theirs
 // Update theme if system preference changes and no user choice is stored
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     if (!localStorage.getItem('theme')) {
@@ -45,6 +48,9 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () 
     }
 });
 
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 // Keep theme consistent across tabs
 window.addEventListener('storage', (e) => {
@@ -54,6 +60,17 @@ window.addEventListener('storage', (e) => {
 // Attach toggle to button in header
 document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
+<<<<<<< ours
+=======
+// Mobile navigation toggle
+const navToggle = document.getElementById('nav-toggle');
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('open');
+    });
+}
+
+>>>>>>> theirs
 // Apply theme on page load
 applySavedTheme();
 
