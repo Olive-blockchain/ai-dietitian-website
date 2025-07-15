@@ -10,6 +10,9 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
     --gradient-start: #f5f9ff;
     --gradient-end: #d5e4f0;
+    --pokemon-blue: #3B82F6;
+    --pokemon-red: #EF4444;
+    --pokemon-yellow: #F59E0B;
 }
 
 [data-theme='dark'] {
@@ -22,6 +25,9 @@
     --shadow-color: rgba(0, 0, 0, 0.3);
     --gradient-start: #333;
     --gradient-end: #111;
+    --pokemon-blue: #60A5FA;
+    --pokemon-red: #F87171;
+    --pokemon-yellow: #FBBF24;
 }
 
 body {
@@ -67,20 +73,6 @@ nav {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-#theme-toggle:hover {
-    transform: rotate(20deg);
-}
-
-#theme-toggle {
-    margin-left: 1rem;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 #theme-toggle:hover {
@@ -212,7 +204,8 @@ h2 {
 }
 
 .feature-grid,
-.review-grid {
+.review-grid,
+.differentiator-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -220,7 +213,8 @@ h2 {
 
 .feature,
 .review,
-.faq-item {
+.faq-item,
+.differentiator {
     background: var(--card-background);
     padding: 2rem;
     border-radius: 15px;
@@ -233,7 +227,8 @@ h2 {
 
 .feature:hover,
 .review:hover,
-.faq-item:hover {
+.faq-item:hover,
+.differentiator:hover {
     transform: translateY(-5px);
 }
 
@@ -251,11 +246,28 @@ h2 {
 }
 
 .feature h3,
-.faq-item h3 {
+.faq-item h3,
+.differentiator h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0;
     color: var(--text-color);
+}
+
+.differentiator {
+    background: linear-gradient(135deg, var(--card-background), rgba(76, 175, 80, 0.1));
+    border-left: 4px solid var(--primary-color);
+}
+
+.differentiator h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.differentiator p {
+    line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 .review p {
@@ -321,11 +333,6 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
     margin-bottom: 0.5rem;
-<<<<<<< ours
-<<<<<<< ours
-=======
-=======
->>>>>>> theirs
 }
 
 /* Pricing section */
@@ -368,10 +375,6 @@ footer {
 
 .price-card li {
     margin-bottom: 0.5rem;
-<<<<<<< ours
->>>>>>> theirs
-}
-=======
 }
 
 /* Upcoming features list */
@@ -384,6 +387,16 @@ footer {
     line-height: 1.6;
 }
 
+/* Pokemon-themed enhancements */
+.feature h3 {
+    background: linear-gradient(45deg, var(--primary-color), #66BB6A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Enhanced mobile responsiveness */
 @media (max-width: 768px) {
     #nav-toggle {
         display: block;
@@ -414,8 +427,10 @@ footer {
     }
     .feature-grid,
     .review-grid,
-    .pricing-grid {
+    .pricing-grid,
+    .differentiator-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
@@ -427,4 +442,3 @@ footer {
         padding: 0.8rem 2rem;
     }
 }
->>>>>>> theirs
