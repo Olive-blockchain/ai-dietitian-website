@@ -1,0 +1,18 @@
+Prompts for AI Video/Image Generation (e.g., Veo)
+
+**Main Dietitian Character (Korean K-Pop Style)**
+
+*   **Prompt 1 (Hero Image/Video):** "A full-shot cinematic video of an ultra-cute Korean K-pop style female dietitian in a crisp white coat, smiling warmly. She is in a modern, minimalist, and professional diet clinic with soft, natural lighting. She gestures invitingly towards a comfortable chair, as if welcoming a client for a consultation. The background is clean, with subtle hints of green plants and wood accents. The overall mood is welcoming, professional, and friendly."
+*   **Prompt 2 (Feature Graphic - Personalization):** "A close-up shot of the cute K-pop style dietitian, holding a tablet that displays a personalized meal plan with colorful, healthy food icons. She is pointing to the screen with a friendly and encouraging expression. The background is a softly blurred clinic environment."
+*   **Prompt 3 (Feature Graphic - Analysis):** "A medium shot of the dietitian looking thoughtfully at a holographic interface showing intricate nutritional data and graphs. The data visualizations are sleek and futuristic, glowing with a soft blue and green light. She has a focused and intelligent expression."
+
+**User Avatars (for Reviews Section)**
+
+*   **User 1 (John Doe):** "A realistic, friendly-looking man in his late 20s, with a healthy and happy expression. He is dressed in casual, modern clothing. The background is a simple, neutral color."
+*   **User 2 (Jane Smith):** "A realistic, confident-looking woman in her early 30s, with a vibrant and energetic look. She is dressed in stylish athletic wear. The background is a simple, neutral color."
+*   **User 3 (David Johnson):** "A realistic, approachable-looking man in his 40s, with a calm and satisfied smile. He is dressed in business-casual attire. The background is a simple, neutral color."
+
+**General Graphics**
+
+*   **App Icon:** "A clean, modern app icon for a dietitian app. The design should be a stylized, abstract representation of a healthy meal or a heart, using a color palette of green, white, and a touch of blue. The icon should be simple, memorable, and easily recognizable on a phone screen."
+*   **Website Background:** "A subtle, abstract background for a website. The design should be a gentle, flowing pattern of light green and blue shapes, creating a sense of calm and well-being. The background should not be distracting but should add a touch of elegance to the site."
