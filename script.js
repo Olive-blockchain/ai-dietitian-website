@@ -24,6 +24,15 @@ const toggleTheme = () => {
 // Example: Add a button in your HTML to call toggleTheme()
 // <button onclick="toggleTheme()">Toggle Dark Mode</button>
 
+// Mobile Nav Toggle
+const navToggle = document.getElementById('nav-toggle');
+const navList = document.querySelector('nav ul');
+if (navToggle && navList) {
+    navToggle.addEventListener('click', () => {
+        navList.classList.toggle('open');
+    });
+}
+
 // FAQ Accordion
 document.querySelectorAll('.faq-item h3').forEach(item => {
     item.addEventListener('click', () => {
